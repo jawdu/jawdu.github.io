@@ -8,7 +8,9 @@
 	<meta name="author" content="Jason Dunstall" />
 	<meta name="copyright" content="Copyright (c) 2013-2020 Jason Dunstall" />
     <!-- ^^ haha :) -->
-	<link rel="stylesheet" href="css/jawdu.css" media="all" type="text/css"/>
+	<link rel="stylesheet" href="../../css/jawdu.css" media="all" type="text/css"/>
+	<!--script src="../libs/jquery-1.9.1.min.js"></script-->	
+	<script src="javascript/sierpinski.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
 		<td class="menuspacer">|</td>
 		<td class="menuFont"><!--a href="code.html"-->coding</a></td>
 		<td class="menuspacer">|</td>
-		<td class="menuFont"><a href="pages/oldweb.html"-->old web</a></td>
+		<td class="menuFont"><a href="../oldweb.html"-->old web</a></td>
 		<td class="menuspacer">|</td>
 		<td class="menuFont"><!--a href="other.html"-->other stuff</a></td>
 		<td class="menuspacer"></td>
@@ -33,11 +35,25 @@
 
 <div id="content">
 
-    <p class="cFont1">
-        [ dragged out of storage ]
+    <p class="menuFont">
+        <a href="blocks.html">blocks</a> | <a href="noughtsCrosses.html">noughts & crosses</a> | sierpinski triangle
     </p>
-		<!-- img class="mainpageIMG" alt="cover of Parll by Dusan Jurajda" width="300" src="images/parll.jpg" -->
+
+	<p class="cFont1" style="width:400px;">
+	Generate a Sierpinski triangle, like what I did using BASIC circa 1996. 
+	<a href="http://en.wikipedia.org/wiki/Sierpinski_triangle" target="_blank">
+	Wikipedia</a> inevitably helped remind me of what to do.</p>
+	<p style="margin-left:170px"><button onclick="startSPT()" style="font-size:80%; margin:0 auto;">Draw it</button></p>
+</div>
+	
+<div id="canvasArea"">
+	<canvas id="spTriangle" width="400" height="400" style="border:1px solid #9bbbc6;">
+	Hey! If you can see this, then your browser doesn't support the HTML5 canvas element.
+	You're probably using Internet Explorer or an old version of another browser. Update 
+	or try Firefox / Chrome / a different OS.	
+	</canvas>
 </div>
 
-
 </body>
+</html>
+

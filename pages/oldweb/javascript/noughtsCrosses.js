@@ -1,5 +1,5 @@
-var crossURL = "../images/cross.png";
-var noughtURL = "../images/nought.png";
+var crossURL = "images/cross.png";
+var noughtURL = "images/nought.png";
 var grid = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 var numMoves = 0;
 

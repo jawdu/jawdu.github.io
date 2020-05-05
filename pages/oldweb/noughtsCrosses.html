@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>_ _ _ J A W D U  _ _ _ </title>                                        
+	<meta name="description" content="jawdu.net" />
+	<!--meta name="keywords" content="one, two, three" /-->
+	<meta name="author" content="Jason Dunstall" />
+	<meta name="copyright" content="Copyright (c) 2013-2020 Jason Dunstall" />
+    <!-- ^^ haha :) -->
+	<link rel="stylesheet" href="../../css/jawdu.css" media="all" type="text/css"/>
+	<script src="libs/jquery-1.9.1.min.js"></script>
+	<script src="javascript/noughtsCrosses.js"></script>
+</head>
+
+<body>
+
+<div id="header"> 
+	<table id="menutable">
+	<tr>
+		<td class="menuspacer"></td>
+		<td class="menuHome">jawdu.github.io</td>
+		<td class="menuspacer">|</td>
+		<td class="menuFont"><!--a href="about.html"-->about</a></td>
+		<td class="menuspacer">|</td>
+		<td class="menuFont"><!--a href="code.html"-->coding</a></td>
+		<td class="menuspacer">|</td>
+		<td class="menuFont"><a href="../oldweb.html"-->old web</a></td>
+		<td class="menuspacer">|</td>
+		<td class="menuFont"><!--a href="other.html"-->other stuff</a></td>
+		<td class="menuspacer"></td>
+	</tr>
+	</table>
+</div>
+
+<div id="content"> <!-- margin-left:auto; margin-right:auto"-->
+
+    <p class="menuFont">
+        <a href="blocks.html">blocks</a> | noughts & crosses | <a href="sierpinski.html">sierpinski triangle</a>
+    </p>
+
+	<p class="cFont1">A game to play. You move first.</p>
+
+	<table id="grid"> <!--margin-left:auto; margin-right:auto"-->
+		<tr style="height:100px;">
+			<td id="td1" style="background:#6dbbc6; width:100px;"><div id="idiv1"><img id="img1"></div></td>
+			<td id="td2" style="background:#9bbbc6; width:100px;"><div id="idiv2"><img id="img2"></div></td>
+			<td id="td3" style="background:#6dbbc6; width:100px;"><div id="idiv3"><img id="img3"></div></td>
+		</tr>
+		<tr style="height:100px;">
+			<td id="td4" style="background:#9bbbc6;"><div id="idiv4"><img id="img4"></div></td>
+			<td id="td5" style="background:#6dbbc6;"><div id="idiv5"><img id="img5"></div></td>
+			<td id="td6" style="background:#9bbbc6;"><div id="idiv6"><img id="img6"></div></td>
+		</tr>
+		<tr style="height:100px;">
+			<td id="td7" style="background:#6dbbc6;"><div id="idiv7"><img id="img7"></div></td>
+			<td id="td8" style="background:#9bbbc6;"><div id="idiv8"><img id="img8"></div></td>
+			<td id="td9" style="background:#6dbbc6;"><div id="idiv9"><img id="img9"></div></td>
+		</tr>
+	</table>
+	<p style="margin-left:110px"><button onclick="resetGrid()" style="font-size:80%">Reset game</button></p>
+</div>
+
+<script>
+
+$('body').click(function(event) {    
+    var id = event.target.id;
+	checkValidSquare(id);		
+});
+
+
+</script>
+</body>
+
+    
+
+</html>
