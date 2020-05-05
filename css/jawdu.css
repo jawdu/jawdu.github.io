@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+  	padding: 0;
+	width: 100%;			/* added */
+	background-color:#E9EBF0;
+	}
+
+div#header {				/* menu bar background */
+	background:#DCDFEE;
+	width: 100%;
+	position: fixed;		/* fix header to top  */	
+	top: 0px; 				/* also ^ 			  */
+	}
+
+div#content {				/* 	i.e. the leading text for all pages. */
+	margin-top:60px;
+	margin-left:35px;
+	width: 600px;
+	}
+
+div#canvasArea {			/*	the typical canvas area. set top left point, basically. */
+	margin-top:20px;		/*  */
+	margin-left:35px;		/*  same as div#content  */
+	}
+
+
+div#backText {
+	margin-left:35px;
+	margin-top:15px;
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	text-decoration:underline;
+}
+
+table#menutable {
+	margin-left:22px;		/* 22px to align content left margin with menuspace between jawdu.net and about */
+	height:40px;
+	}
+
+canvas#wideCanvas {
+	margin-top:40px;		/* remember menutable is 40 */
+	width: 100%;
+	height: 80vh; /* vh is magic!!! */
+	}
+
+/* 	font & href styles  */
+
+.menuHome {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	font-weight: 600;
+	color:#1d262c;
+	}
+
+.menuFont {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	}
+
+.cFont1 {					/* i.e. contentFont1 */
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	}
+
+.buttonFont {				/* for buttons? */
+
+}
+
+.menuspacer {
+	padding-left: 2px;
+	padding-right: 2px;
+	}
+
+.extlink {					/* outgoing links */
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight:600;
+	}
+
+a:link {color:#1d262c; text-decoration:none;}
+a:visited {color:#1d262c; text-decoration:none;}
+a:hover {color:#1d262c; text-decoration:underline;} 
+a:active {color:#1d262c; text-decoration:underline;}
+
+/* lists on other.html */
+
+.halfFrame {
+	border-left: 1px solid #9bbbc6; 
+	border-bottom: 1px solid #9bbbc6;
+	}
+
+ul#linklist {
+	margin-left: -25px;
+	list-style-type:none;
+	}
+
+ul#linklist li {
+	padding-bottom: 5px;
+	}
+
+ul#dumblist {
+	margin-left: -25px;
+	list-style-type:none;
+	}
+
+ul#dumblist li {
+	padding-bottom: 5px;
+	}
+
+/* code styling */
+
+.gcLink {				/* Column 1 of goodCode table - i.e. href links */
+	width: 60px;
+	text-align: center;
+	/*background:#DCDFEE;*/	
+	}
+
+.gcText {				/* Column 2 of goodCode table - i.e. text */
+
+	}
+
+.dcLink {				/* Column 1 of desktopCode table */
+	width: 60px;
+	text-align: center; 
+	/*background:#DCDFEE;*/	
+	}
+
+.dlLink {				/* Column 1 of dullCode table */
+	width: 60px;
+	text-align: center; 
+	/*background:#DCDFEE;	*/
+	}
+
+.codeSub {				/* Sub-headings on code page	*/
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	}
+
+.dateCol {
+	text-align: center; 
+	width: 80px;
+	}
+
+.table a {				/* href in table cell BUT HMM NOT WORKING??? */
+    display: block;
+    text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+/* old, deprecated?
+
+img.mainpageIMG {
+		border-width:0;
+		display:block;
+		padding-top:40px;
+		margin-left:auto;
+		margin-right:auto;
+}
+
+
+.jqmT {
+		/* the table in jquery pseudo-program */ /*
+		padding:	0px;
+		margin:		0px;
+		border:		none;
+}
+
+
