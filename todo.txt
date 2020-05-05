@@ -1,0 +1,7 @@
+Things I should do eventually
+
+
+
+- some sort of rationalised dynamic menu stuff instead of hand doing it
+
+
