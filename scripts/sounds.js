@@ -1,17 +1,11 @@
 // sounds
 
-
-
-//// 1st iteration: continous 'random' sound i.e. superposition of selection of waves.0-4 (?) of each say.
-//// with some little canvas on top to select #each from 0 to 4. click on number/shade it
-//// little log/output of parameters incase sounds good
-
 // PeriodicWave
 
 
 
 
-var sBool  = 0;            //  is s1 on or off
+var sBool  = 0;            //  on/off button
 var context = new AudioContext();
 var s1, s2, s3, s4;
 var f1 = 400, f2 = 53, f3 = 6, f4 = 14; 
@@ -56,6 +50,9 @@ function sound1() {
 
             for  (let n = 0;  n < 100; n++) {
 
+            // just gonna have to start writing numbers out
+            // basically for loop is really shitty way to do this
+
                 a = Math.random() + 0.0000001;
                 b = Math.random() + 0.0000001;
                 c = Math.random() + 0.0000001;
@@ -68,10 +65,14 @@ function sound1() {
 
                 t = Math.random() * 10 + 1;
 
+                document.getElementById("tVal").innerHTML = t + " and n " + n;
+
                 g1.gain.exponentialRampToValueAtTime(a, context.currentTime + t);
                 g2.gain.exponentialRampToValueAtTime(b, context.currentTime + t);
                 g3.gain.exponentialRampToValueAtTime(c, context.currentTime + t);
                 g4.gain.exponentialRampToValueAtTime(d, context.currentTime + t);
+
+                setTimeout(tOut, t*1000)
 
             }
 
@@ -92,5 +93,9 @@ function sound1() {
 
 
 
+function tOut() {
 
+    // empty function
+
+}
 
